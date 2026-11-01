@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e3358">
+  <title>Contact — Zafran Samosa House</title>
+  <meta name="description" content="Visit Zafran at 14 Chandni Gali, Jaipur, or leave a note. Messages stay in this browser.">
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+    <a class="wordmark" href="index.html">
+      <img src="images/mark.svg" width="36" height="36" alt="">
+      <span>Zafran</span>
+    </a>
+    <input class="nav-toggle" id="nav-toggle" type="checkbox">
+    <label class="nav-burger" for="nav-toggle">
+      <span class="nav-burger-lines" aria-hidden="true"><span></span><span></span></span>
+      Menu
+    </label>
+    <nav id="site-nav" aria-label="Primary">
+      <a href="index.html">The House</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <header class="mast">
+      <div class="wrap">
+        <p class="kicker">Chandni Gali</p>
+        <h1>Fourteen steps <em>down the lane.</em></h1>
+        <p class="lede">Come while the oil is speaking, or leave a note. Notes are kept in this browser so the batch is not interrupted.</p>
+      </div>
+    </header>
+
+    <section class="section contact-block">
+      <div class="wrap">
+        <div class="visit-grid">
+          <div>
+            <h2>Hours</h2>
+            <table class="hours">
+              <caption class="sr-only">Opening hours</caption>
+              <tbody>
+                <tr><th scope="row">Tuesday – Friday</th><td>11:00 – 21:00</td></tr>
+                <tr><th scope="row">Saturday &amp; Sunday</th><td>10:30 – 21:30</td></tr>
+                <tr><th scope="row">Monday</th><td>The kettle rests</td></tr>
+              </tbody>
+            </table>
+            <p class="note">Last full plate at half past eight. Cones for the lane until the oil cools.</p>
+          </div>
+          <div>
+            <h2>Address</h2>
+            <address class="big-address">14 Chandni Gali<br>Pink City<br>Jaipur 302002</address>
+            <p><a href="tel:+919829022114">+91 98290 22114</a></p>
+            <p class="contact-mail"><a href="mailto:hello@zafran.house">hello@zafran.house</a></p>
+            <p class="note">Enter from the Hawa Mahal side. Pass the cloth shops. After the blue door, we are the next arch. The lane is for walking.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <p class="kicker">A note for the house</p>
+            <h2>Tell us before noon.</h2>
+            <p class="lede">For a dozen, a table larger than six, or a question the board does not answer. Your words stay on this device.</p>
+            <figure class="lane-figure">
+              <img src="images/lane.svg" width="960" height="320" alt="A drawn map of Chandni Gali ending at Zafran, number 14.">
+              <figcaption>The red ring is us.</figcaption>
+            </figure>
+          </div>
+          <div>
+            <div id="thanks" class="thanks" hidden tabindex="-1">
+              <p class="kicker">Received</p>
+              <h2>Thank you, <span data-thanks-name></span>.</h2>
+              <p class="lede">Your note is kept in this browser. If the matter is today, call the house between batches.</p>
+            </div>
+            <form id="contact-form" class="form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="meta">optional</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="topic">About</label>
+                <select id="topic" name="topic" required>
+                  <option value="A table">A table</option>
+                  <option value="The house dozen">The house dozen</option>
+                  <option value="A question">A question</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Note</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn-solid" type="submit">Keep this note</button>
+            </form>
+            <div id="saved-notes" class="saved" hidden></div>
+          </div>
+        </div>
+
+        <h2 class="questions-heading">Before you come</h2>
+        <div class="questions">
+          <details>
+            <summary>Is the keema kept separate?</summary>
+            <p>Yes. It has a kettle of its own. The other folds, including mawa, are vegetarian.</p>
+          </details>
+          <details>
+            <summary>How hot is it?</summary>
+            <p>The samosa itself is gentle. The red chilli oil is the heat, and it stays on the side unless you ask.</p>
+          </details>
+          <details>
+            <summary>Can you make a dozen?</summary>
+            <p>Yes. Leave a note or call before noon. We deliver on foot inside the old city, and we stop before dusk.</p>
+          </details>
+          <details>
+            <summary>Do you take a card?</summary>
+            <p>Cash and UPI at the arch. The note form does not take payment.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-mark" aria-hidden="true">Zafran</p>
+      <div class="footer-grid">
+        <div>
+          <a class="logo-type" href="index.html">Zafran</a>
+          <p class="footer-note">A samosa house on Chandni Gali. Hand-folded, fried in small batches, since 1987.</p>
+        </div>
+        <div>
+          <p class="footer-label">Visit</p>
+          <address>
+            14 Chandni Gali<br>
+            Pink City, Jaipur 302002<br>
+            <a href="tel:+919829022114">+91 98290 22114</a><br>
+            <a href="mailto:hello@zafran.house">hello@zafran.house</a>
+          </address>
+        </div>
+        <div>
+          <p class="footer-label">Kettle</p>
+          <p>Tuesday – Friday, 11–9<br>Saturday &amp; Sunday, 10:30–9:30<br>Monday, closed</p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-label">Index</p>
+          <a href="index.html">The House</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="legal">© 2026 Zafran Samosa House. Jaipur.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var KEY = "zafran-notes";
+      var form = document.getElementById("contact-form");
+      var thanks = document.getElementById("thanks");
+      var list = document.getElementById("saved-notes");
+      var nameSlot = thanks.querySelector("[data-thanks-name]");
+
+      function load() {
+        try {
+          var parsed = JSON.parse(localStorage.getItem(KEY) || "[]");
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (error) {
+          return [];
+        }
+      }
+
+      function escapeHtml(value) {
+        return String(value || "").replace(/[&<>"']/g, function (character) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character];
+        });
+      }
+
+      function render(entries) {
+        if (!entries.length) {
+          list.hidden = true;
+          list.innerHTML = "";
+          return;
+        }
+        list.hidden = false;
+        list.innerHTML = "<h2>Notes kept on this browser</h2>" + entries.map(function (entry) {
+          return "<article><h3>" + escapeHtml(entry.name) + "</h3><p class=\"meta\">" +
+            escapeHtml(entry.topic) + " · " + escapeHtml(entry.when) + "</p><p class=\"blurb\">" +
+            escapeHtml(entry.message) + "</p><p class=\"meta\">" + escapeHtml(entry.email) +
+            (entry.phone ? " · " + escapeHtml(entry.phone) : "") + "</p></article>";
+        }).join("");
+      }
+
+      render(load());
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var data = new FormData(form);
+        var entry = {
+          name: String(data.get("name") || "").trim(),
+          email: String(data.get("email") || "").trim(),
+          phone: String(data.get("phone") || "").trim(),
+          topic: String(data.get("topic") || "").trim(),
+          message: String(data.get("message") || "").trim(),
+          when: new Date().toLocaleString()
+        };
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        if (!entry.name || !entry.email || !entry.message) {
+          return;
+        }
+        var entries = load();
+        entries.unshift(entry);
+        localStorage.setItem(KEY, JSON.stringify(entries.slice(0, 40)));
+        form.reset();
+        nameSlot.textContent = entry.name;
+        thanks.hidden = false;
+        render(entries.slice(0, 40));
+        thanks.focus();
+      });
+    })();
+  </script>
+</body>
+</html>

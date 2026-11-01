@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Zafran</title>
+  <rect width="64" height="64" fill="#1e3358"/>
+  <path d="M32 11 L53 51 H11 Z" fill="none" stroke="#f6f1e7" stroke-width="1.6"/>
+  <path d="M32 24 L44 47 H20 Z" fill="#d4523a"/>
+</svg>
